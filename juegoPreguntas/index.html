@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    
+    <h1>Responde las preguntas</h1>
+
+    <h1 id="countDown">00:30</h1>
+    
+    <button onclick="empezarYMostrar()"> Empezar </button>
+
+    <h3>Preguntas:</h3>
+
+    <h3 id="listaPreguntas">??</h3>
+    <input type="text" id="respuesta1">
+    <button onclick="preguntasYRespuestas('respuesta1')">Enviar</button>
+
+    <br>
+    <br>
+
+    <button onclick="location.reload()">Reiniciar</button>
+    <button onclick="terminarJuego()">Terminar</button>
+
+    <p id="preguntasDelJuego"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
