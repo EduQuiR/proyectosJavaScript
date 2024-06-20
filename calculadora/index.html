@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <br><br>
+
+    <button onclick="sumar('numero1','numero2')"> + </button>
+    <button onclick="resta('numero1','numero2')"> - </button>
+    <button onclick="multiplicacion('numero1','numero2')"> x </button>
+    <button onclick="division('numero1','numero2')"> / </button>
+    <br>
+
+    <div class="doble">
+        <button onclick="potencia('numero1','numero2')"> ^ </button>
+        <button onclick="raizCuadrada('numero2')"> √ </button>
+        <br>
+        <button onclick="valorAbsoluto('numero2')"> |x| </button>
+        <button onclick="generarNroRandom('numero1', 'numero2')"> random </button>
+    </div>
+
+    <div class="triple">
+        
+        <button onclick="redondear()">round</button>    
+        <button onclick="floor()"> floor</button>
+        <button onclick="redondearParaArriba()"> ceil </button>
+        <p>Resultado: <span id="resultado">--</span></p>
+    </div>
+
+
+</body>
+</html>
